@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RandomSkunk.RuntimePolyfill", "RandomSkunk.RuntimePolyfill\RandomSkunk.RuntimePolyfill.shproj", "{83B9C620-D25C-4B5B-BBF5-C8B5E871CE8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleProject", "ExampleProject\ExampleProject.csproj", "{53092C7F-6321-43BD-87A4-A89254F07AFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53092C7F-6321-43BD-87A4-A89254F07AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53092C7F-6321-43BD-87A4-A89254F07AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53092C7F-6321-43BD-87A4-A89254F07AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53092C7F-6321-43BD-87A4-A89254F07AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BC0EC9D-4031-44FD-AF97-4175A165F44B}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RandomSkunk.RuntimePolyfill\SharedProject.projitems*{53092c7f-6321-43bd-87a4-a89254f07afd}*SharedItemsImports = 5
+		RandomSkunk.RuntimePolyfill\SharedProject.projitems*{83b9c620-d25c-4b5b-bbf5-c8b5e871ce8e}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

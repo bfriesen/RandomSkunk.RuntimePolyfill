@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>
+			net8.0;
+			net7.0;
+			net6.0;
+			net5.0;
+			netcoreapp3.1;
+			netcoreapp3.0;
+			netcoreapp2.2;
+			netcoreapp2.1;
+			netcoreapp2.0;
+			netstandard2.1;
+			netstandard2.0;
+			net48;
+			net472;
+			net47;
+			net462;
+			net461;
+		</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+
+		<NoWarn>NU1902;NU1903;</NoWarn>
+	</PropertyGroup>
+
+	<Import Project="..\RandomSkunk.RuntimePolyfill\SharedProject.projitems" Label="Shared" />
+
+	<ItemGroup Condition="'$(TargetFramework)'=='net462' or '$(TargetFramework)'=='net461'">
+	  <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+	</ItemGroup>
+
+</Project>
