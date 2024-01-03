@@ -1,16 +1,25 @@
 ﻿#if !NET7_0_OR_GREATER
 
-namespace System.Runtime.CompilerServices;
+#pragma warning disable IDE0079
+#pragma warning disable IDE0290
 
-[AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = false)]
-internal sealed class CompilerFeatureRequiredAttribute(string featureName) : Attribute
+namespace System.Runtime.CompilerServices
 {
-    public const string RefStructs = nameof(RefStructs);
-    public const string RequiredMembers = nameof(RequiredMembers);
+    [AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = false)]
+    internal sealed class CompilerFeatureRequiredAttribute : Attribute
+    {
+        public const string RefStructs = nameof(RefStructs);
+        public const string RequiredMembers = nameof(RequiredMembers);
 
-    public string FeatureName { get; } = featureName;
+        public CompilerFeatureRequiredAttribute(string featureName)
+        {
+            FeatureName = featureName;
+        }
 
-    public bool IsOptional { get; init; }
+        public string FeatureName { get; }
+
+        public bool IsOptional { get; set; }
+    }
 }
 
 #endif

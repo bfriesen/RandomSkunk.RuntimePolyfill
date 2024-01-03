@@ -1,94 +1,98 @@
 ﻿#if !NETSTANDARD2_1_OR_GREATER && !NET5_0_OR_GREATER && !NETCOREAPP3_0_OR_GREATER
 
+#pragma warning disable IDE0079
+#pragma warning disable IDE0090
+
 using System.Runtime.CompilerServices;
 
-namespace System;
-
-internal readonly struct Index : IEquatable<Index>
+namespace System
 {
-    private readonly int _value;
-
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public Index(int value, bool fromEnd = false)
+    internal readonly struct Index : IEquatable<Index>
     {
-        if (value < 0)
-            throw new ArgumentOutOfRangeException(nameof(value), "value must be non-negative");
+        private readonly int _value;
 
-        if (fromEnd)
-            _value = ~value;
-        else
-            _value = value;
-    }
-
-    private Index(int value)
-    {
-        _value = value;
-    }
-
-    public static Index Start => new(0);
-
-    public static Index End => new(~0);
-
-    public int Value
-    {
-        get
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public Index(int value, bool fromEnd = false)
         {
-            if (_value < 0)
-                return ~_value;
+            if (value < 0)
+                throw new ArgumentOutOfRangeException(nameof(value), "value must be non-negative");
+
+            if (fromEnd)
+                _value = ~value;
             else
-                return _value;
+                _value = value;
         }
-    }
 
-    public bool IsFromEnd => _value < 0;
-
-    public static implicit operator Index(int value) => FromStart(value);
-
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Index FromStart(int value)
-    {
-        if (value < 0)
-            throw new ArgumentOutOfRangeException(nameof(value), "value must be non-negative");
-
-        return new Index(value);
-    }
-
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Index FromEnd(int value)
-    {
-        if (value < 0)
-            throw new ArgumentOutOfRangeException(nameof(value), "value must be non-negative");
-
-        return new Index(~value);
-    }
-
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public int GetOffset(int length)
-    {
-        var offset = _value;
-        if (IsFromEnd)
+        private Index(int value)
         {
-            // offset = length - (~value)
-            // offset = length + (~(~value) + 1)
-            // offset = length + value + 1
-            offset += length + 1;
+            _value = value;
         }
 
-        return offset;
-    }
+        public static Index Start => new Index(0);
 
-    public override bool Equals(object? value) => value is Index index && _value == index._value;
+        public static Index End => new Index(~0);
 
-    public bool Equals(Index other) => _value == other._value;
+        public int Value
+        {
+            get
+            {
+                if (_value < 0)
+                    return ~_value;
+                else
+                    return _value;
+            }
+        }
 
-    public override int GetHashCode() => _value;
+        public bool IsFromEnd => _value < 0;
 
-    public override string ToString()
-    {
-        if (IsFromEnd)
-            return "^" + ((uint)Value).ToString();
+        public static implicit operator Index(int value) => FromStart(value);
 
-        return ((uint)Value).ToString();
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static Index FromStart(int value)
+        {
+            if (value < 0)
+                throw new ArgumentOutOfRangeException(nameof(value), "value must be non-negative");
+
+            return new Index(value);
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static Index FromEnd(int value)
+        {
+            if (value < 0)
+                throw new ArgumentOutOfRangeException(nameof(value), "value must be non-negative");
+
+            return new Index(~value);
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public int GetOffset(int length)
+        {
+            var offset = _value;
+            if (IsFromEnd)
+            {
+                // offset = length - (~value)
+                // offset = length + (~(~value) + 1)
+                // offset = length + value + 1
+                offset += length + 1;
+            }
+
+            return offset;
+        }
+
+        public override bool Equals(object value) => value is Index index && _value == index._value;
+
+        public bool Equals(Index other) => _value == other._value;
+
+        public override int GetHashCode() => _value;
+
+        public override string ToString()
+        {
+            if (IsFromEnd)
+                return "^" + ((uint)Value).ToString();
+
+            return ((uint)Value).ToString();
+        }
     }
 }
 

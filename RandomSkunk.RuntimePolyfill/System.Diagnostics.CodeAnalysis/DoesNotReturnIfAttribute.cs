@@ -1,11 +1,20 @@
 ﻿#if !NETSTANDARD2_1_OR_GREATER && !NET5_0_OR_GREATER && !NETCOREAPP3_0_OR_GREATER
 
-namespace System.Diagnostics.CodeAnalysis;
+#pragma warning disable IDE0079
+#pragma warning disable IDE0290
 
-[AttributeUsage(AttributeTargets.Parameter, Inherited = false)]
-internal sealed class DoesNotReturnIfAttribute(bool parameterValue) : Attribute
+namespace System.Diagnostics.CodeAnalysis
 {
-    public bool ParameterValue { get; } = parameterValue;
+    [AttributeUsage(AttributeTargets.Parameter, Inherited = false)]
+    internal sealed class DoesNotReturnIfAttribute : Attribute
+    {
+        public DoesNotReturnIfAttribute(bool parameterValue)
+        {
+            ParameterValue = parameterValue;
+        }
+
+        public bool ParameterValue { get; }
+    }
 }
 
 #endif

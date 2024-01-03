@@ -1,11 +1,17 @@
 ﻿#if !NET5_0_OR_GREATER && !NETCOREAPP3_0_OR_GREATER
 
-namespace System.Runtime.CompilerServices;
-
-[AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = false)]
-internal sealed class CallerArgumentExpressionAttribute(string parameterName) : Attribute
+namespace System.Runtime.CompilerServices
 {
-    public string ParameterName { get; } = parameterName;
+    [AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = false)]
+    internal sealed class CallerArgumentExpressionAttribute : Attribute
+    {
+        public CallerArgumentExpressionAttribute(string parameterName)
+        {
+            ParameterName = parameterName;
+        }
+
+        public string ParameterName { get; }
+    }
 }
 
 #endif

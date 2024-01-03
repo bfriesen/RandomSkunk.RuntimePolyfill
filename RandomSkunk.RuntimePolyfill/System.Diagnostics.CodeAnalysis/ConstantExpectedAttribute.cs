@@ -1,16 +1,20 @@
 ﻿#if !NET7_0_OR_GREATER
 
-namespace System.Diagnostics.CodeAnalysis;
+#pragma warning disable IDE0079
+#pragma warning disable CS8618
 
-/// <summary>
-/// This attribute is non-functional.
-/// </summary>
-[AttributeUsage(AttributeTargets.Parameter, Inherited = false)]
-internal sealed class ConstantExpectedAttribute : Attribute
+namespace System.Diagnostics.CodeAnalysis
 {
-    public object? Min { get; set; }
+    /// <summary>
+    /// This attribute is non-functional.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Parameter, Inherited = false)]
+    internal sealed class ConstantExpectedAttribute : Attribute
+    {
+        public object Min { get; set; }
 
-    public object? Max { get; set; }
+        public object Max { get; set; }
+    }
 }
 
 #endif
