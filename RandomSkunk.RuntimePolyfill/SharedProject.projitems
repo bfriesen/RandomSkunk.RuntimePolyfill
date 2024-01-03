@@ -33,6 +33,5 @@
     <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\RuntimeHelpers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)System\Index.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)System\Range.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System\StringExtensions.cs" />
   </ItemGroup>
 </Project>
