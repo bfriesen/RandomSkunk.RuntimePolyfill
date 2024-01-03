@@ -1,13 +1,15 @@
 ﻿#if !NET7_0_OR_GREATER
 
 #pragma warning disable IDE0079
-#pragma warning disable IDE0301
+#pragma warning disable CA1825
 
 namespace System.Diagnostics.CodeAnalysis
 {
     [AttributeUsage(AttributeTargets.Parameter | AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = false)]
     internal sealed class StringSyntaxAttribute : Attribute
     {
+        private static readonly object[] _emptyArguments = new object[0];
+
         public const string CompositeFormat = nameof(CompositeFormat);
 
         public const string DateOnlyFormat = nameof(DateOnlyFormat);
@@ -35,7 +37,7 @@ namespace System.Diagnostics.CodeAnalysis
         public StringSyntaxAttribute(string syntax)
         {
             Syntax = syntax;
-            Arguments = Array.Empty<object>();
+            Arguments = _emptyArguments;
         }
 
         public StringSyntaxAttribute(string syntax, params object[] arguments)

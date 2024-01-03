@@ -1,8 +1,5 @@
 ﻿#if !NETSTANDARD2_1_OR_GREATER && !NET6_0_OR_GREATER && !NETCOREAPP3_0_OR_GREATER
 
-#pragma warning disable IDE0079
-#pragma warning disable IDE0301
-
 namespace System.Runtime.CompilerServices
 {
     internal static class RuntimeHelpers
@@ -19,7 +16,7 @@ namespace System.Runtime.CompilerServices
             {
                 // We know the type of the array to be exactly T[].
                 if (length == 0)
-                    return Array.Empty<T>();
+                    return Empty<T>.Array;
 
                 dest = new T[length];
             }
@@ -31,6 +28,11 @@ namespace System.Runtime.CompilerServices
 
             Array.Copy(array, offset, dest, 0, length);
             return dest;
+        }
+
+        private static class Empty<T>
+        {
+            public static readonly T[] Array = new T[0];
         }
     }
 }

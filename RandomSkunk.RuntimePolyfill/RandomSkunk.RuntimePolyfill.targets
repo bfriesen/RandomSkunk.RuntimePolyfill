@@ -1,6 +1,20 @@
 <Project>
-	<ItemGroup Condition="'$(TargetFramework)'=='net462' or '$(TargetFramework)'=='net461' or '$(TargetFramework)'=='net46'">
-		<!-- Value tuples don't exist for .NET Framework 4.6.2 and below. -->
+	<!-- Value tuples don't exist for .NET Framework 4.6.2 and below or .NET Standard 1.6 and below. -->
+	<ItemGroup Condition="'$(TargetFramework)'=='net462'
+					   or '$(TargetFramework)'=='net461'
+					   or '$(TargetFramework)'=='net46'
+					   or '$(TargetFramework)'=='net452'
+					   or '$(TargetFramework)'=='net451'
+					   or '$(TargetFramework)'=='net45'
+					   or '$(TargetFramework)'=='netstandard1.6'
+					   or '$(TargetFramework)'=='netstandard1.5'
+					   or '$(TargetFramework)'=='netstandard1.4'
+					   or '$(TargetFramework)'=='netstandard1.3'
+					   or '$(TargetFramework)'=='netstandard1.2'
+					   or '$(TargetFramework)'=='netstandard1.1'
+					   or '$(TargetFramework)'=='netstandard1.0'
+					   or '$(TargetFramework)'=='netcoreapp1.1'
+					   or '$(TargetFramework)'=='netcoreapp1.0'">
 		<PackageReference Include="System.ValueTuple" Version="4.5.0" />
 	</ItemGroup>
 </Project>
