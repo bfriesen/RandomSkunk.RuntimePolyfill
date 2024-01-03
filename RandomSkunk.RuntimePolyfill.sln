@@ -7,6 +7,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RandomSkunk.RuntimePolyfill
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleProject", "ExampleProject\ExampleProject.csproj", "{53092C7F-6321-43BD-87A4-A89254F07AFD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomSkunk.RuntimePolyfill", "RandomSkunk.RuntimePolyfill\RandomSkunk.RuntimePolyfill.csproj", "{4981D1DD-0639-4087-BA69-6827A859FA07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{53092C7F-6321-43BD-87A4-A89254F07AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53092C7F-6321-43BD-87A4-A89254F07AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53092C7F-6321-43BD-87A4-A89254F07AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4981D1DD-0639-4087-BA69-6827A859FA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4981D1DD-0639-4087-BA69-6827A859FA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4981D1DD-0639-4087-BA69-6827A859FA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4981D1DD-0639-4087-BA69-6827A859FA07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
