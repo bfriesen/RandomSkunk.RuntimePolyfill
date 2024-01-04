@@ -6,38 +6,39 @@
     <SharedGUID>83b9c620-d25c-4b5b-bbf5-c8b5e871ce8e</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>SharedProject</Import_RootNamespace>
+    <Import_RootNamespace>
+    </Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\AllowNullAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\ConstantExpectedAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\DisallowNullAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\DoesNotReturnAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\DoesNotReturnIfAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\DynamicallyAccessedMembersAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\DynamicallyAccessedMemberTypes.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\DynamicDependencyAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\ExperimentalAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\MaybeNullAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\MaybeNullWhenAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\MemberNotNullAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\MemberNotNullWhenAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\NotNullAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\NotNullIfNotNullAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\NotNullWhenAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\RequiresAssemblyFilesAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\RequiresDynamicCodeAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\RequiresUnreferencedCodeAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\SetsRequiredMembersAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\StringSyntaxAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\UnconditionalSuppressMessageAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics.CodeAnalysis\UnscopedRefAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Diagnostics\StackTraceHiddenAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\CallerArgumentExpressionAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\CompilerFeatureRequiredAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\IsExternalInit.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\RequiredMemberAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\RuntimeHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\AllowNullAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\ConstantExpectedAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\DisallowNullAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\DoesNotReturnAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\DoesNotReturnIfAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\DynamicallyAccessedMembersAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\DynamicallyAccessedMemberTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\DynamicDependencyAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\ExperimentalAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\MaybeNullAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\MaybeNullWhenAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\MemberNotNullAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\MemberNotNullWhenAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\NotNullAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\NotNullIfNotNullAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\NotNullWhenAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\RequiresAssemblyFilesAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\RequiresDynamicCodeAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\RequiresUnreferencedCodeAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\SetsRequiredMembersAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\StringSyntaxAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\UnconditionalSuppressMessageAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\CodeAnalysis\UnscopedRefAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Diagnostics\StackTraceHiddenAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Runtime\CompilerServices\CallerArgumentExpressionAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Runtime\CompilerServices\CompilerFeatureRequiredAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Runtime\CompilerServices\IsExternalInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Runtime\CompilerServices\RequiredMemberAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Runtime\CompilerServices\RuntimeHelpers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)System\Index.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)System\Range.cs" />
   </ItemGroup>
