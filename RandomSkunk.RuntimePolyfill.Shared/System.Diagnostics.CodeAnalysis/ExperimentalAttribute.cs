@@ -1,7 +1,9 @@
 ﻿#if !NET8_0_OR_GREATER
 
 #pragma warning disable IDE0079
-#pragma warning disable CS8618, IDE0290
+#pragma warning disable IDE0290
+
+#nullable enable
 
 namespace System.Diagnostics.CodeAnalysis
 {
@@ -15,7 +17,7 @@ namespace System.Diagnostics.CodeAnalysis
 
         public string DiagnosticId { get; }
 
-        public string UrlFormat { get; set; }
+        public string? UrlFormat { get; set; }
     }
 }
 

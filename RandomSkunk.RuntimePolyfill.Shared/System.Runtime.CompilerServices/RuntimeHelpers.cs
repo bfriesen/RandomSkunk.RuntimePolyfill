@@ -1,5 +1,7 @@
 ﻿#if !NETSTANDARD2_1_OR_GREATER && !NET6_0_OR_GREATER && !NETCOREAPP3_0_OR_GREATER
 
+#nullable enable
+
 namespace System.Runtime.CompilerServices
 {
     internal static class RuntimeHelpers

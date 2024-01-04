@@ -3,6 +3,8 @@
 #pragma warning disable IDE0079
 #pragma warning disable CA1825
 
+#nullable enable
+
 namespace System.Diagnostics.CodeAnalysis
 {
     [AttributeUsage(AttributeTargets.Parameter | AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = false)]
@@ -40,7 +42,7 @@ namespace System.Diagnostics.CodeAnalysis
             Arguments = _emptyArguments;
         }
 
-        public StringSyntaxAttribute(string syntax, params object[] arguments)
+        public StringSyntaxAttribute(string syntax, params object?[] arguments)
         {
             Syntax = syntax;
             Arguments = arguments;
@@ -48,7 +50,7 @@ namespace System.Diagnostics.CodeAnalysis
 
         public string Syntax { get; }
 
-        public object[] Arguments { get; }
+        public object?[] Arguments { get; }
     }
 }
 

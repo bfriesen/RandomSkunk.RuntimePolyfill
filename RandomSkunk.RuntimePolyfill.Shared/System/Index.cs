@@ -3,6 +3,8 @@
 #pragma warning disable IDE0079
 #pragma warning disable IDE0090
 
+#nullable enable
+
 using System.Runtime.CompilerServices;
 
 namespace System
@@ -80,7 +82,7 @@ namespace System
             return offset;
         }
 
-        public override bool Equals(object value) => value is Index index && _value == index._value;
+        public override bool Equals(object? other) => other is Index index && _value == index._value;
 
         public bool Equals(Index other) => _value == other._value;
 

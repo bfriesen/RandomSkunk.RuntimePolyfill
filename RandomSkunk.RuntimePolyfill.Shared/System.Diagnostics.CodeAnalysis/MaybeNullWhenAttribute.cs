@@ -3,6 +3,8 @@
 #pragma warning disable IDE0079
 #pragma warning disable IDE0290
 
+#nullable enable
+
 namespace System.Diagnostics.CodeAnalysis
 {
     [AttributeUsage(AttributeTargets.Parameter, Inherited = false)]

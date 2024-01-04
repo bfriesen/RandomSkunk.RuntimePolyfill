@@ -3,6 +3,8 @@
 #pragma warning disable IDE0079
 #pragma warning disable IDE0090, IDE0290
 
+#nullable enable
+
 using System.Runtime.CompilerServices;
 
 namespace System
@@ -25,7 +27,7 @@ namespace System
 
         public static Range EndAt(Index end) => new Range(Index.Start, end);
 
-        public override bool Equals(object value) =>
+        public override bool Equals(object? value) =>
             value is Range r &&
             r.Start.Equals(Start) &&
             r.End.Equals(End);

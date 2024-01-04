@@ -1,5 +1,7 @@
 ﻿#if !NET5_0_OR_GREATER && !NETCOREAPP3_0_OR_GREATER
 
+#nullable enable
+
 namespace System.Runtime.CompilerServices
 {
     [AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = false)]
