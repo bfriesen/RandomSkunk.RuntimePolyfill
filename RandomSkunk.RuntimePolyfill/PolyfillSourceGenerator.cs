@@ -6,9 +6,9 @@ using System.Text;
 namespace RandomSkunk.RuntimePolyfill;
 
 [Generator]
-public class EmbeddedResourceSourceGenerator : ISourceGenerator
+public class PolyfillSourceGenerator : ISourceGenerator
 {
-    private static readonly string _resourceNamePrefix = typeof(EmbeddedResourceSourceGenerator).Namespace + ".";
+    private static readonly string _resourceNamePrefix = typeof(PolyfillSourceGenerator).Namespace + ".";
 
     public void Initialize(GeneratorInitializationContext context)
     {
