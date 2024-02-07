@@ -40,7 +40,7 @@ System.Runtime.CompilerServices.IsExternalInit
 System.Runtime.CompilerServices.RequiredMemberAttribute
 System.Runtime.CompilerServices.RuntimeHelpers</Description>
 		<Authors>Brian Friesen</Authors>
-		<Copyright>Copyright 2023 (c) Brian Friesen. All rights reserved.</Copyright>
+		<Copyright>Copyright 2023-2024 (c) Brian Friesen. All rights reserved.</Copyright>
 
 		<PackageVersion>0.1.0</PackageVersion>
 		<PackageId>$(Title)</PackageId>
