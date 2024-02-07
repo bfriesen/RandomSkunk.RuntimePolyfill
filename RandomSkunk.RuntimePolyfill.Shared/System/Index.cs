@@ -142,7 +142,7 @@ namespace System
         /// <summary>
         /// Indicates whether the current Index object is equal to another object of the same type.
         /// </summary>
-        /// <param name="value">An object to compare with this object</param>
+        /// <param name="other">An object to compare with this object</param>
         public override bool Equals([NotNullWhen(true)] object? other) => other is Index index && _value == index._value;
 
         /// <summary>
