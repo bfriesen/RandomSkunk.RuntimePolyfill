@@ -42,7 +42,7 @@ System.Runtime.CompilerServices.RuntimeHelpers</Description>
 		<Authors>Brian Friesen</Authors>
 		<Copyright>Copyright 2023-2024 (c) Brian Friesen. All rights reserved.</Copyright>
 
-		<PackageVersion>0.1.0</PackageVersion>
+		<PackageVersion>1.0.0</PackageVersion>
 		<PackageId>$(Title)</PackageId>
 		<PackageProjectUrl>https://github.com/bfriesen/RandomSkunk.RuntimePolyfill</PackageProjectUrl>
 		<PackageTags>analyzer source-generator</PackageTags>
