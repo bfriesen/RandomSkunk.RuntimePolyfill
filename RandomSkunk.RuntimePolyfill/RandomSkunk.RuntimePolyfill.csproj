@@ -7,7 +7,38 @@
 		<Nullable>enable</Nullable>
 
 		<Title>RandomSkunk.RuntimePolyfill</Title>
-		<Description>A source generator that adds internal versions of types missing from earlier versions of .NET.</Description>
+		<Description>Provides a source generator that adds internal versions of types missing from older versions of .NET
+
+Commonly Used Types:
+System.Index
+System.Range
+System.Diagnostics.StackTraceHiddenAttribute
+System.Diagnostics.CodeAnalysis.AllowNullAttribute
+System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute
+System.Diagnostics.CodeAnalysis.DisallowNullAttribute
+System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute
+System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute
+System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute
+System.Diagnostics.CodeAnalysis.DynamicDependencyAttribute
+System.Diagnostics.CodeAnalysis.ExperimentalAttribute
+System.Diagnostics.CodeAnalysis.MaybeNullAttribute
+System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute
+System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute
+System.Diagnostics.CodeAnalysis.NotNullAttribute
+System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute
+System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+System.Diagnostics.CodeAnalysis.RequiresAssemblyFilesAttribute
+System.Diagnostics.CodeAnalysis.RequiresDynamicCodeAttribute
+System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute
+System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute
+System.Diagnostics.CodeAnalysis.StringSyntaxAttribute
+System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute
+System.Diagnostics.CodeAnalysis.UnscopedRefAttribute
+System.Runtime.CompilerServices.CallerArgumentExpressionAttribute
+System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute
+System.Runtime.CompilerServices.IsExternalInit
+System.Runtime.CompilerServices.RequiredMemberAttribute
+System.Runtime.CompilerServices.RuntimeHelpers</Description>
 		<Authors>Brian Friesen</Authors>
 		<Copyright>Copyright 2023 (c) Brian Friesen. All rights reserved.</Copyright>
 
